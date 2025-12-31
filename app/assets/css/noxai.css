@@ -1,0 +1,22 @@
+:root {
+  --nox-bg: #0A0A0A;
+  --nox-surface: #111111;
+  --nox-border: #1E1E1E;
+
+  --nox-white: #FFFFFF;
+  --nox-gray: #B4B4B4;
+  --nox-muted: #6F6F6F;
+
+  --nox-glow: rgba(255,255,255,0.08);
+  --nox-blur: blur(20px);
+
+  --radius: 14px;
+}
+
+
+.nox-glass {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--nox-border);
+  border-radius: var(--radius);
+}

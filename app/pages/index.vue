@@ -1,29 +1,17 @@
 <template>
-  <div class="relative">
-    <Hero />
-    <TrustedBy />
-    <Features />
-    <CTASection />
-  </div>
+  <Hero />
+  <Trusted />
+  <Capabilities />
+  <HowItWorks />
+  <CaseStudies />
+  <FinalCTA />
 </template>
 
-<script lang="ts" setup>
-useSeoMeta({
-    title: 'Services – Company',
-    description: 'Our professional digital services'
-})
-
-import gsap from 'gsap'
-import Hero from '~/components/sections/Hero.vue'
-import TrustedBy from '~/components/sections/TrustedBy.vue'
-import Features from '~/components/sections/Features.vue'
-import CTASection from '~/components/sections/CTASection.vue'
-onMounted(() => {
-  gsap.from('.hero', {
-    opacity: 0,
-    y: 40,
-    duration: 1,
-    ease: 'power3.out'
-  })
-})
+<script setup lang="ts">
+import Hero from '~~/app/components/home/Hero.vue'
+import Trusted from '~~/app/components/home/Trusted.vue'
+import Capabilities from '~~/app/components/home/Capabilities.vue'
+import HowItWorks from '~~/app/components/home/HowItWorks.vue'
+import CaseStudies from '~~/app/components/home/CaseStudies.vue'
+import FinalCTA from '~~/app/components/home/FinalCTA.vue'
 </script>

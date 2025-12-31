@@ -1,5 +1,4 @@
-import tailwindcss from '@tailwindcss/postcss'
-import autoprefixer from 'autoprefixer'
+import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
@@ -13,20 +12,15 @@ export default defineNuxtConfig({
             ]
         }
     },
-    css: ['~/assets/css/tailwind.css'],
+    css: [
+        'vuetify/styles',
+        '@/assets/css/noxai.css'
+    ],
+    build: {
+        transpile: ['vuetify']
+    },
     typescript: {
         strict: true,
         shim: false
     },
-
-    vite: {
-        css: {
-            postcss: {
-                plugins: [
-                    tailwindcss(),
-                    autoprefixer()
-                ]
-            }
-        }
-    }
 })
