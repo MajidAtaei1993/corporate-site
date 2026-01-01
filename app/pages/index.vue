@@ -1,10 +1,10 @@
 <template>
-  <Hero />
-  <Trusted />
-  <Capabilities />
-  <HowItWorks />
-  <CaseStudies />
-  <FinalCTA />
+    <Hero />
+    <Trusted />
+    <Capabilities />
+    <HowItWorks />
+    <CaseStudies />
+    <FinalCTA />
 </template>
 
 <script setup lang="ts">
