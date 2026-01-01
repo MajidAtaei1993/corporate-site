@@ -3,7 +3,7 @@
         <Header />
 
         <v-main>
-            <slot />
+            <NuxtPage />
         </v-main>
 
         <Footer />
